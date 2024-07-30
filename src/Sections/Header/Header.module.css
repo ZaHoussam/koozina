@@ -1,0 +1,65 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 100px;
+}
+
+.header :is(.container, .content) {
+  height: 100%;
+}
+
+.header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .links {
+  color: var(--title-color);
+  font-size: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 600;
+  flex: 1;
+  column-gap: 60px;
+}
+
+/* ? Tablet Screen */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .header .links {
+    column-gap: 20px;
+  }
+}
+
+/* ? Desktop Screen */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .header .links {
+    column-gap: 40px;
+  }
+}
+
+.header .links li:not(:last-of-type) a {
+  color: var(--title-color);
+  transition: var(--time);
+  position: relative;
+}
+
+.header .links li:not(:last-of-type) a:hover {
+  color: var(--red-color);
+}
+
+.header .links li:not(:last-of-type) a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: var(--red-color);
+  bottom: 0;
+  transition: var(--time);
+}
+
+.header .links li:not(:last-of-type) a:hover:before {
+  width: 100%;
+}

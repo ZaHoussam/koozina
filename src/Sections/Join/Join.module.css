@@ -1,0 +1,69 @@
+.join {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background-color: var(--red-color);
+}
+
+.join .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 40px;
+  height: 100%;
+  width: 50%;
+}
+
+.join .title {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: -10px;
+}
+
+.join .subtitle {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.join .form {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.join .form input {
+  border: 0;
+  outline: none;
+  color: #212121;
+  width: 100%;
+}
+
+.join .form input::placeholder {
+  color: var(--desc-card-color);
+}
+
+.join .form a {
+  width: fit-content !important;
+  padding: 10px 35px;
+  border-radius: 50px;
+}
+
+.join .security {
+  color: #fff;
+  font-size: 1.1rem;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: 300;
+}

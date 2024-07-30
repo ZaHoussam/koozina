@@ -1,0 +1,18 @@
+.logo {
+  font-size: 3rem;
+  color: var(--red-color);
+  width: fit-content;
+  position: relative;
+  font-weight: 600;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--red-color);
+  left: -10px;
+  bottom: 30px;
+  border-radius: 50%;
+}

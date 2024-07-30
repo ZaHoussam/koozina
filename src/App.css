@@ -1,0 +1,74 @@
+/* * Global */
+@import url("https://fonts.cdnfonts.com/css/dejavu-sans");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap");
+:root {
+  --red-color: #e93551;
+  --mini-red-color: #fbd5da;
+  --title-color: #4f0e18;
+  --subtitle-color: #90666d;
+  --title-card-color: #010101;
+  --desc-card-color: #c2c2c3;
+  --bg-section: #fff1f3;
+  --time: 0.4s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+body {
+  background-color: #fff9f9;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ? Mobile Screen */
+@media screen and (max-width: 575px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* ? Smart Mobile Screen */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+}
+
+/* ? Tablet Screen */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+}
+
+/* ? Desktop Screen */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
+}
+
+/* ? Labtop Screen */
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}

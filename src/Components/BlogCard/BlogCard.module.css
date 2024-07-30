@@ -1,0 +1,49 @@
+.card {
+  width: 400px;
+  height: 540px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 100px -30px #c2c2c3;
+  transition: var(--time);
+  transform: scale(1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: var(--red-color);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.card .title {
+  font-size: 1.6rem;
+  color: #000;
+  margin-bottom: 10px;
+  transition: var(--time);
+}
+
+.card:hover .title {
+  color: var(--bg-section);
+}
+
+.card .desc {
+  color: var(--desc-card-color);
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.card .date {
+  color: var(--red-color);
+  transition: var(--time);
+}
+
+.card:hover .date {
+  color: var(--bg-section);
+}

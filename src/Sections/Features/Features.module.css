@@ -1,0 +1,65 @@
+.features {
+  padding: 80px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 100px;
+}
+
+.features .right {
+  width: 60%;
+}
+
+.features > div > div {
+  top: 35%;
+}
+
+.features .list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 30px;
+}
+
+.features .list li {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.features .list .icon {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  position: relative;
+}
+
+.features .list .icon::before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: 75%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-radius: 20px;
+  border: 5px solid var(--mini-red-color);
+}
+
+.features .list .icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.features .list .txt {
+  flex: 1;
+}
+
+.features .list .desc {
+  font-size: 1.1rem;
+}
+
+.features :is(.messageTitle, .messageSubtitle, .title, .desc) {
+  color: var(--subtitle-color);
+}

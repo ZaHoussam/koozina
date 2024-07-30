@@ -1,0 +1,10 @@
+export { default as Header } from "./Header/Header";
+export { default as Hero } from "./Hero/Hero";
+export { default as OurPartner } from "./OurPartner/OurPartner";
+export { default as Features } from "./Features/Features";
+export { default as Courses } from "./Courses/Courses";
+export { default as Instructors } from "./Instructors/Instructors";
+export { default as Blog } from "./Blog/Blog";
+export { default as Students } from "./Students/Students";
+export { default as Join } from "./Join/Join";
+export { default as Footer } from "./Footer/Footer";

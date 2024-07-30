@@ -1,0 +1,68 @@
+.instructors {
+  padding: 50px 0;
+}
+
+.instructors > div:first-child {
+  width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.instructors > div:first-child + div {
+  margin-bottom: 20px;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.arrows span {
+  width: 40px;
+  height: 40px;
+  background-color: var(--bg-section);
+  border: 2px solid var(--desc-card-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--time);
+  cursor: pointer;
+}
+
+.arrows span svg {
+  fill: var(--desc-card-color);
+  transition: var(--time);
+}
+
+.arrows span:is(:hover, .active) {
+  background-color: var(--red-color);
+  border-color: var(--red-color);
+}
+
+.arrows span:is(:hover, .active) svg {
+  fill: var(--bg-section);
+}
+
+.arrows .progressBar {
+  width: 100%;
+  height: 2px;
+  border-radius: 10px;
+  background-color: var(--bg-section);
+  position: relative;
+}
+
+.arrows .progressBar span {
+  position: absolute;
+  height: 5px;
+  border-radius: 10px;
+  background-color: var(--red-color);
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+}

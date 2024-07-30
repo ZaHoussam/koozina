@@ -1,0 +1,15 @@
+.OurPartner {
+  padding: 40px 0 5px;
+  background-color: var(--bg-section);
+}
+
+.OurPartner ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.OurPartner img {
+  width: 120px;
+  height: 120px;
+}

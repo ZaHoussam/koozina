@@ -1,0 +1,107 @@
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: rgb(233, 53, 81);
+  background: linear-gradient(
+    0deg,
+    rgba(233, 53, 81, 1) 25%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-radius: 50%;
+  box-shadow: 0px 30px 50px -3px #e93551;
+  margin: auto;
+}
+
+.cover {
+  width: 80%;
+  position: relative;
+  display: block;
+  border-radius: 40%;
+  transform: translateY(-57px);
+}
+
+.members {
+  position: absolute;
+  padding: 10px 20px;
+  column-gap: 10px;
+  background-color: var(--bg-section);
+  border-radius: 20px;
+  top: 30px;
+  left: -40px;
+  box-shadow: 0px 0px 200px var(--subtitle-color);
+}
+
+.members .img {
+  width: 40px;
+  height: 40px;
+  background-color: var(--mini-red-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.members img {
+  width: 60%;
+}
+
+.members .num {
+  color: var(--title-color);
+}
+
+.members span {
+  color: var(--subtitle-color);
+  font-size: 0.7rem;
+  text-align: center;
+  display: block;
+  margin-top: -10px;
+}
+
+.instructor {
+  background-color: var(--bg-section);
+  width: 120px;
+  position: absolute;
+  padding: 10px;
+  right: -60px;
+  bottom: 90px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 200px var(--subtitle-color);
+}
+
+.instructor > div {
+  margin-bottom: 5px;
+}
+
+.instructors {
+  display: flex;
+  align-items: center;
+}
+
+.instructors li {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: -5px;
+  border: 2px solid var(--bg-section);
+}
+
+.instructors li:last-child {
+  background-color: var(--mini-red-color);
+  color: var(--red-color);
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6rem;
+}
+
+.instructors li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

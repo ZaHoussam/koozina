@@ -1,0 +1,16 @@
+.hero {
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero .left {
+  width: 528px;
+}
+
+.hero .btns {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+}

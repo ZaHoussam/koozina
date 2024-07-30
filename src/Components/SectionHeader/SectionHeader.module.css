@@ -1,0 +1,33 @@
+.SectionHeader {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+.chip {
+  font-size: 0.7rem;
+  color: var(--red-color);
+  background-color: var(--mini-red-color);
+  width: fit-content;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 3rem;
+  color: var(--title-color);
+  line-height: 1.5;
+}
+
+.title span {
+  color: var(--red-color);
+}
+
+.subtitle {
+  color: var(--subtitle-color);
+  line-height: 2;
+  font-size: 1rem;
+}

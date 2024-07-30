@@ -1,0 +1,107 @@
+.footer {
+  padding: 80px 0 0;
+}
+
+.footer .content {
+  display: flex;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+.footer .content > div {
+  width: 25%;
+}
+.footer .col1 span {
+  display: block;
+  font-size: 1.5rem;
+  margin-top: -10px;
+}
+
+.footer .socialMedia {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  margin-top: 20px;
+}
+
+.footer .socialMedia a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: var(--red-color);
+  border-radius: 50px;
+  border: 1px solid var(--red-color);
+  transition: var(--time);
+}
+
+.footer .socialMedia a:hover {
+  background-color: var(--bg-section);
+}
+
+.footer .socialMedia a svg {
+  transition: var(--time);
+}
+.footer .socialMedia a:hover svg {
+  fill: var(--red-color);
+}
+
+.footer .content > div:not(:first-child) {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.footer .content .title {
+  margin-bottom: 10px;
+  color: var(--title-card-color);
+  position: relative;
+  width: fit-content;
+}
+
+.footer .content .title::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  background-color: var(--red-color);
+  bottom: 0;
+  right: 0;
+  border-radius: 10px;
+}
+
+.footer .content .links li {
+  margin-bottom: 10px;
+}
+
+.footer .content .links a {
+  color: var(--title-color);
+  transition: var(--time);
+  position: relative;
+}
+
+.footer .content .links a:hover {
+  color: var(--red-color);
+}
+
+.footer .content .links a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  border-radius: 10px;
+  background-color: var(--red-color);
+  bottom: 0;
+  transition: var(--time);
+}
+
+.footer .content .links a:hover:before {
+  width: 100%;
+}
+
+.footer .copyRight {
+  padding: 20px 0;
+  border-top: 1px solid var(--desc-card-color);
+  text-align: center;
+}

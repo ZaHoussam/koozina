@@ -1,0 +1,22 @@
+.blog {
+  padding: 50px 0;
+  background-color: var(--bg-section);
+}
+
+.blog .blogHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.blog .blogHeader > div {
+  width: 50%;
+  margin-bottom: 0;
+}
+
+.blog .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,73 @@
+.card {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 100px -30px #c2c2c3;
+}
+
+.image {
+  width: 100%;
+  height: 250px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--mini-red-color);
+}
+
+.info img {
+  width: 30px;
+}
+
+.info li {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  font-size: 0.9rem;
+}
+
+.chefs {
+  display: flex;
+  align-items: center;
+  column-gap: -10px;
+  padding-top: 10px;
+}
+
+.chefs img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: -10px;
+}
+
+.chefs span {
+  width: 30px;
+  height: 30px;
+  background-color: var(--mini-red-color);
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  color: var(--red-color);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.chefs i {
+  margin-right: 20px;
+  font-style: normal;
+}
