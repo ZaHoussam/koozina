@@ -5,9 +5,4 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "/koozina/",
-  build: {
-    outDir: "koozina",
-    assetsDir: "src",
-    manifest: true,
-  },
 });
