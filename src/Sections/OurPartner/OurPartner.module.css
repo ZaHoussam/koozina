@@ -1,6 +1,7 @@
 .OurPartner {
   padding: 40px 0 5px;
   background-color: var(--bg-section);
+  margin-bottom: 40px;
 }
 
 .OurPartner ul {
