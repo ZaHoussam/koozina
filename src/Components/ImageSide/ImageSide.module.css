@@ -12,16 +12,39 @@
     rgba(255, 255, 255, 1) 100%
   );
   border-radius: 50%;
-  box-shadow: 0px 30px 50px -3px #e93551;
   margin: auto;
 }
 
-.cover {
-  width: 80%;
-  position: relative;
+.shadow {
+  box-shadow: 0px 30px 50px -3px #e93551;
+  z-index: 5;
   display: block;
-  border-radius: 40%;
-  transform: translateY(-57px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.content1 {
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 92px 0 36px #fff8f8;
+}
+
+:is(.content1, .content2) {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.cover {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s;
 }
 
 .members {
@@ -30,9 +53,10 @@
   column-gap: 10px;
   background-color: var(--bg-section);
   border-radius: 20px;
-  top: 30px;
-  left: -40px;
+  top: 80px;
+  left: -60px;
   box-shadow: 0px 0px 200px var(--subtitle-color);
+  z-index: 10;
 }
 
 .members .img {
@@ -46,7 +70,8 @@
 }
 
 .members img {
-  width: 60%;
+  width: 60% !important;
+  transform: unset !important;
 }
 
 .members .num {
@@ -63,13 +88,14 @@
 
 .instructor {
   background-color: var(--bg-section);
-  width: 120px;
+  width: 150px;
   position: absolute;
   padding: 10px;
   right: -60px;
   bottom: 90px;
   border-radius: 20px;
   box-shadow: 0px 0px 200px var(--subtitle-color);
+  z-index: 10;
 }
 
 .instructor > div {
@@ -82,8 +108,8 @@
 }
 
 .instructors li {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   overflow: hidden;
   margin-left: -5px;

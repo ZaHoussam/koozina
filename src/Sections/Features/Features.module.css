@@ -10,8 +10,10 @@
   width: 60%;
 }
 
-.features > div > div {
-  top: 35%;
+.features > div > div img {
+  top: unset;
+  width: 90%;
+  transform: translate(-50%, -30%);
 }
 
 .features .list {

@@ -9,7 +9,13 @@ import chef4 from "../../assets/chef-4.jpg";
 const ImageSide = ({ img, memberscase, instructors }) => {
   return (
     <div className={style.right}>
-      <img src={img} alt="cover" className={style.cover} />
+      <span className={style.shadow}></span>
+      <div className={style.content1}>
+        <img src={img} alt="cover" className={style.cover} />
+      </div>
+      <div className={style.content2}>
+        <img src={img} alt="cover" className={style.cover} />
+      </div>
       <div
         className={style.members}
         style={{ display: memberscase ? "flex" : "none" }}
@@ -26,7 +32,7 @@ const ImageSide = ({ img, memberscase, instructors }) => {
         className={style.instructor}
         style={{ display: instructors ? "block" : "none" }}
       >
-        <SectionHeader chip="الخبراء" chipSize=".5rem" chipWeight="800" />
+        <SectionHeader chip="الخبراء" chipSize="0.8rem" chipWeight="800" />
         <ul className={style.instructors}>
           <li>
             <img src={chef3} alt="" />
