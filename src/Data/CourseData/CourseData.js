@@ -1,7 +1,7 @@
 // * Imports
 import course1 from "../../assets/course-1.jpg";
 import course2 from "../../assets/course-2.jpg";
-import course3 from "../../assets/course-3.webp";
+import course3 from "../../assets/course-3.jpg";
 import chef1 from "../../assets/chef-1.jpg";
 import chef2 from "../../assets/chef-2.jpg";
 
